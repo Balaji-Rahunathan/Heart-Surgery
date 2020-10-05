@@ -80,6 +80,7 @@ a:hover {
     position: absolute;
     bottom: -4%;
     left: 42%;
+    transform: rotate(180deg);
 }
 .blockage-container {
     position: absolute;
@@ -93,10 +94,12 @@ a:hover {
 }
 .btn-text{
     display: none;
+    margin: 1rem 2rem
 }
 .rota{
-    transform: rotate(180deg);
+    transform: rotate(0deg);
 }
+
 @media (max-width: 576px) {
    
     .image-container{
@@ -142,5 +145,14 @@ a:hover {
         position: absolute;
         bottom: -5%;
         left: 42%;
+    }
+    .blockage-container {
+        position: absolute;
+       right: 3%;
+    }
+    .blockage {
+        width: 65px;
+        height: 65px;
+       
     }
 }
