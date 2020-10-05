@@ -12,9 +12,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    letter-spacing: 1px
 }
 a {
     text-decoration: none;
+}
+p {
+    margin: 0
 }
 a:hover {
     text-decoration: none;
@@ -23,6 +27,8 @@ a:hover {
     color: #00A1FB;
     font-size: 36px;
     font-family:'AvenirNextLTPro-Bold', sans-serif ;
+    font-weight: 550;
+    word-spacing: 0.2rem
 }
 .btn-para {
     color: #00A1FB;
@@ -30,9 +36,9 @@ a:hover {
     font-family:'AvenirNextLTPro-Bold', sans-serif ;
 }
 .image-container{
-    width: 700px;
-    height: 700px;
-    margin: 5rem auto;
+    width: 730px;
+    height: 730px;
+    margin: 5rem auto 0.5rem auto;
     position: relative;
 }
 .heart {
@@ -63,8 +69,8 @@ a:hover {
 }
 .red-circle2{
     position: absolute;
-    top: 18%;
-    right: 8%;
+    top: 19%;
+    right: 7%;
     color: #fff;
     background-color: #D61335;
     width: 130px;
@@ -114,12 +120,20 @@ a:hover {
 }
 .btn-text{
     display: none;
-    margin: 1rem 2rem;
+    margin: 4rem 2rem 1rem 2rem;
     font-family:'AvenirNextLTPro-Bold', sans-serif ;
-    font-size: 14px
+    font-size: 16px;
+    word-spacing: 0.1rem;
 }
 .rota{
     transform: rotate(0deg);
+}
+.btn-para-a {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    word-spacing: 0.1rem;
+    color: #00A1FB
 }
 
 @media (max-width: 576px) {
@@ -127,7 +141,7 @@ a:hover {
     .image-container{
         width: 340px;
         height: 340px;
-        margin: 5rem auto;
+        margin: 5rem auto 2rem auto;
         position: relative;
     }
     .red-circle1{
@@ -151,7 +165,7 @@ a:hover {
         height: 65px;
         font-size: 0.5rem;
         top: 18%;
-        right: 10%;
+        right: 7%;
     }
     .red-circle3{
        
@@ -176,5 +190,17 @@ a:hover {
     .blockage {
         width: 65px;
         height: 65px;
+    }
+    .btn-para-a {
+        margin-top: 2.5rem;
+    }
+    .btn-text{
+        display: none;
+        margin: 2.5rem 2rem 1rem 2rem;
+        font-family:'AvenirNextLTPro-Bold', sans-serif ;
+        font-size: 14px
+    }
+    .head-title {
+        font-size: 28px
     }
 }
