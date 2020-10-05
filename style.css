@@ -100,10 +100,10 @@ a:hover {
     font-family:'AvenirNextLTPro-Bold', sans-serif ;
 }
 .red-circle4 {
-    width: 80px;
+    width: 100px;
     height: auto;
     position: absolute;
-    bottom: -4%;
+    bottom: -6%;
     left: 42%;
     transform: rotate(180deg);
 }
@@ -176,10 +176,10 @@ a:hover {
         right: 8%;
     } 
     .red-circle4 {
-        width: 40px;
+        width: 60px;
         height: auto;
         position: absolute;
-        bottom: -5%;
+        bottom: -7%;
         left: 42%;
     }
     .blockage-container {
