@@ -32,23 +32,23 @@ btnPara.addEventListener('click', function() {
 
 
 
-if(redCircleFour.classList.contains("cir")) {
+// if(redCircleFour.classList.contains("cir")) {
     redCircleFour.addEventListener('click', function() {
         btnText.style.display = "block";
         btnText.textContent = `During your Coronary Artery Bypass Surgery (CABG) the doctor takes a vein from your leg and an artery from your chext wall or arm. These are used to bypass the narrowed area in your coronary arteries (see picture opposite). This improves the oxygen supply to the heart muscle. Your body can still work without the arteries and veins that are used by the surgeon for your bypass`;
         btnPara.style.display = "none";
         redCircleFour.classList.add("rota");
     });
-} 
-redCircleFour.addEventListener('click', function() {
-    btnText.style.display = "none";
-    btnPara.style.display = "block";
-    redCircleFour.classList.remove("rota");
+// } 
+// redCircleFour.addEventListener('click', function() {
+//     btnText.style.display = "none";
+//     btnPara.style.display = "block";
+//     redCircleFour.classList.remove("rota");
   
-    redCircleOne.style.backgroundColor = "#D61335";
-    redCircleOne.innerText = "Click here to Reveal!";
-    redCircleTwo.style.backgroundColor = "#D61335";
-    redCircleTwo.innerText = "Click here to Reveal!";
-   redCircleThree.innerHTML = "Click here to Reveal!";
-    redCircleThree.classList.add("red-circle3");
-});
+//     redCircleOne.style.backgroundColor = "#D61335";
+//     redCircleOne.innerText = "Click here to Reveal!";
+//     redCircleTwo.style.backgroundColor = "#D61335";
+//     redCircleTwo.innerText = "Click here to Reveal!";
+//    redCircleThree.innerHTML = "Click here to Reveal!";
+//     redCircleThree.classList.add("red-circle3");
+// });

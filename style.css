@@ -1,3 +1,13 @@
+
+@font-face {
+    font-family: 'AvenirNextLTPro-Regular';
+    src: url('./fonts/AvenirNextLTPro-Bold.eot');
+    src: url('./fonts/AvenirNextLTPro-Bold.eot') format('embedded-opentype'),
+    url('./fonts/AvenirNextLTPro-Bold.woff') format('woff'),
+    url('./fonts/AvenirNextLTPro-Bold.ttf') format('truetype'),
+    url('./fonts/AvenirNextLTPro-Bold.svg') format('svg');
+  }
+
 * {
     padding: 0;
     margin: 0;
@@ -9,8 +19,15 @@ a {
 a:hover {
     text-decoration: none;
 }
-.head-title, .btn-para {
+.head-title{
     color: #00A1FB;
+    font-size: 36px;
+    font-family:'AvenirNextLTPro-Bold', sans-serif ;
+}
+.btn-para {
+    color: #00A1FB;
+    font-size: 20px;
+    font-family:'AvenirNextLTPro-Bold', sans-serif ;
 }
 .image-container{
     width: 700px;
@@ -42,6 +59,7 @@ a:hover {
     align-items: center;
     font-size: 0.9rem;
     padding: 0.5rem;
+    font-family:'AvenirNextLTPro-Bold', sans-serif ;
 }
 .red-circle2{
     position: absolute;
@@ -56,7 +74,7 @@ a:hover {
     font-size: 0.9rem;
     justify-content: center;
     align-items: center;
-   
+    font-family:'AvenirNextLTPro-Bold', sans-serif ;
     padding: 0.5rem;
 }
 .red-circle3{
@@ -73,6 +91,7 @@ a:hover {
     align-items: center;
     font-size: 0.9rem;
     padding: 0.5rem;
+    font-family:'AvenirNextLTPro-Bold', sans-serif ;
 }
 .red-circle4 {
     width: 80px;
@@ -91,10 +110,13 @@ a:hover {
     font-size: 0.9rem;
     font-weight: 900;
     padding-top: 0.4rem;
+    font-family:'AvenirNextLTPro-Bold', sans-serif ;
 }
 .btn-text{
     display: none;
-    margin: 1rem 2rem
+    margin: 1rem 2rem;
+    font-family:'AvenirNextLTPro-Bold', sans-serif ;
+    font-size: 14px
 }
 .rota{
     transform: rotate(0deg);
@@ -148,11 +170,11 @@ a:hover {
     }
     .blockage-container {
         position: absolute;
-       right: 3%;
+        top: 60%;
+        right: 7%
     }
     .blockage {
         width: 65px;
         height: 65px;
-       
     }
 }
