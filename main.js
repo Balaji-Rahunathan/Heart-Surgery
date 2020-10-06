@@ -1,14 +1,20 @@
-const redCircleOne = document.querySelector('.red-circle1');
+// const redCircleOne = document.querySelector('.red-circle1');
 const redCircleTwo = document.querySelector('.red-circle2');
 const redCircleThree = document.querySelector('.clot');
 const redCircleFour = document.querySelector(".red-circle4");
 const btnPara =   document.querySelector('.btn-para');
 const btnText = document.querySelector(".btn-text");
+const card = document.querySelector(".card");
+card.addEventListener('click', function(){
+    card.classList.add('is-flipped');
+})
 
-redCircleOne.addEventListener('click', function() {
-    redCircleOne.style.backgroundColor = "#00A1FB";
-    redCircleOne.innerText = "Bypass using Saphenous vein";
-});
+// redCircleOne.addEventListener('click', function() {
+//     redCircleOne.style.backgroundColor = "#00A1FB";
+//     redCircleOne.innerText = "Bypass using Saphenous vein";
+//     // redCircleOne.classList.add("reveal");
+
+// });
 redCircleTwo.addEventListener('click', function() {
     redCircleTwo.style.backgroundColor = "#00A1FB";
     redCircleTwo.innerText = "Bypass using Internal Mammary Artery";
@@ -41,7 +47,7 @@ if (!redCircleFour.classList.contains("rota")) {
         btnText.textContent = `During your Coronary Artery Bypass Surgery (CABG) the doctor takes a vein from your leg and an artery from your chext wall or arm. These are used to bypass the narrowed area in your coronary arteries (see picture opposite). This improves the oxygen supply to the heart muscle. Your body can still work without the arteries and veins that are used by the surgeon for your bypass.`;
         btnPara.style.display = "none";
        
-    }, 1500);
+    }, 0300);
            
        
 } else {
@@ -53,7 +59,7 @@ if (!redCircleFour.classList.contains("rota")) {
         btnText.textContent = "";
         btnPara.style.display = "block";
        
-    }, 1500);
+    }, 0300);
        
     }
 })
