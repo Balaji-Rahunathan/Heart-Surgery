@@ -133,6 +133,11 @@ a:hover {
 }
 .rota{
     transform: rotate(0deg);
+    transition: transform 1.5s linear
+}
+.cir {
+    transform: rotate(180deg);
+    transition: transform 1.5s linear
 }
 .btn-para-a {
     margin-top: 4rem;
