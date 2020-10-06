@@ -129,6 +129,7 @@ a:hover {
     font-family:'AvenirNextLTPro-Bold', sans-serif ;
     font-size: 16px;
     word-spacing: 0.1rem;
+    text-align: justify
 }
 .rota{
     transform: rotate(0deg);
