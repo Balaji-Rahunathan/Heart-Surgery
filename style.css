@@ -73,6 +73,10 @@ a:hover {
 }
 .card.is-flipped {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); /* Safari & Chrome */
+    -moz-transform: rotateY(180deg); /* Firefox */
+    -ms-transform: rotateY(180deg); /* Internet Explorer */
+    -o-transform: rotateY(180deg);
   }
   .card_face {
     position: absolute;
@@ -99,6 +103,10 @@ a:hover {
   .blue-circle1 {
       background: #00A1FB;
       transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg); /* Safari & Chrome */
+-moz-transform: rotateY(180deg); /* Firefox */
+-ms-transform: rotateY(180deg); /* Internet Explorer */
+-o-transform: rotateY(180deg);
   }
   .scene2 {
     width: 140px;
@@ -122,6 +130,10 @@ a:hover {
 }
 .card2.is-flipped {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); /* Safari & Chrome */
+    -moz-transform: rotateY(180deg); /* Firefox */
+    -ms-transform: rotateY(180deg); /* Internet Explorer */
+    -o-transform: rotateY(180deg);
   }
   .card_face2 {
     position: absolute;
@@ -148,6 +160,10 @@ a:hover {
   .blue-circle2 {
       background: #00A1FB;
       transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg); /* Safari & Chrome*/
+-moz-transform: rotateY(180deg); 
+-ms-transform: rotateY(180deg); 
+-o-transform: rotateY(180deg); 
   }
   .scene3 {
     width: 140px;
@@ -171,6 +187,10 @@ a:hover {
 }
 .card3.is-flipped {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); /* Safari & Chrome */
+    -moz-transform: rotateY(180deg); /* Firefox */
+    -ms-transform: rotateY(180deg); /* Internet Explorer */
+    -o-transform: rotateY(180deg);
   }
   .card_face3 {
     position: absolute;
@@ -201,6 +221,10 @@ a:hover {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      -webkit-transform: rotateY(180deg); 
+-moz-transform: rotateY(180deg); 
+-ms-transform: rotateY(180deg); 
+-o-transform: rotateY(180deg);
   }
 
 .red-circle4 {
@@ -210,6 +234,10 @@ a:hover {
     bottom: -5.5%;
     left: 43%;
     transform: rotate(180deg);
+    -webkit-transform: rotateY(180deg); 
+-moz-transform: rotateY(180deg); 
+-ms-transform: rotateY(180deg); 
+-o-transform: rotateY(180deg);
 }
 
 .blockage-text {
@@ -230,10 +258,18 @@ a:hover {
 }
 .rota{
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); 
+-moz-transform: rotate(0deg); 
+-ms-transform: rotate(0deg); 
+-o-transform: rotate(0deg);
     transition: transform 0.3s linear
 }
 .cir {
     transform: rotate(180deg);
+    -webkit-transform: rotate(180deg); 
+-moz-transform: rotate(180deg); 
+-ms-transform: rotate(1800deg); 
+-o-transform: rotate(180deg);
     transition: transform 0.3s linear
 }
 .btn-para-a {
@@ -297,45 +333,6 @@ a:hover {
     right:7%;
     }
 
-    /* .red-circle1{
-        position: absolute;
-        top: 42.5%;
-        left: 2.5%;
-        color: #fff;
-        background-color: #D61335;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       font-size: 0.45rem;
-        padding: 10px;
-    } */
-    /* .red-circle2{
-       
-        width: 70px;
-        height: 70px;
-        font-size: 0.45rem;
-        top: 18.5%;
-        right: 7%;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .red-circle3{
-       
-        width: 70px;
-        height: 70px;
-        font-size: 0.45rem;
-        bottom: 20.5%;
-        right: 6.5%;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }  */
     .red-circle4 {
         width: 60px;
         height: auto;

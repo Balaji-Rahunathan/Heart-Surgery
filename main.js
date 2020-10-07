@@ -35,7 +35,7 @@ if (!redCircleFour.classList.contains("rota")) {
     }, 0300);
            
        
-} else {
+ } else {
     redCircleFour.classList.remove("rota");
     redCircleFour.classList.add("cir");
     console.log("you");
