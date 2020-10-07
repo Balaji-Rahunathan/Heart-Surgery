@@ -100,86 +100,128 @@ a:hover {
       background: #00A1FB;
       transform: rotateY(180deg);
   }
-/* .red-circle1{
-    position: absolute;
-    top: 42.5%;
-    left: 1.5%;
-    color: #fff;
-    background-color: #D61335;
+  .scene2 {
     width: 140px;
     height: 140px;
+    /* border: 1px solid #CCC; */
+    margin: 40px 0;
+    perspective: 600px;
+    position: absolute;
+    border-radius: 50%;
+    top: 14.5%;
+    right: 6%
+  }
+.card2 {
+    width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+}
+.card2.is-flipped {
+    transform: rotateY(180deg);
+  }
+  .card_face2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    color:#FFF;
+    text-align: center;
+    font-weight: bold;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 0.9rem;
-    padding: 0.5rem;
-    font-family:'AvenirNextLTPro-Bold', sans-serif ;
     padding: 0.8rem;
-    margin: auto auto;
-   
-} */
-.reveal {
-    /* transform: rotate(360deg);
-    transition: transform 0.3s linear;
-    transform-style: preserve-3d; */
-}
-.red-circle2{
-    position: absolute;
-    top: 19.5%;
-    right: 6%;
-    color: #fff;
-    background-color: #D61335;
+    font-weight: 300;
+    font-family: 'AvenirNextLTPro-Bold', sans-serif ;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .red-circle2 {
+      background:#D61335 ;
+  }
+  .blue-circle2 {
+      background: #00A1FB;
+      transform: rotateY(180deg);
+  }
+  .scene3 {
     width: 140px;
     height: 140px;
-    border-radius: 50%;
-    display: flex;
-    font-size: 0.9rem;
-    justify-content: center;
-    align-items: center;
-    font-family:'AvenirNextLTPro-Bold', sans-serif ;
-    padding: 0.5rem;
-    padding: 1rem 0.4rem 0.4rem 0.4rem;
-}
-.red-circle3{
+    /* border: 1px solid #CCC; */
+    margin: 40px 0;
+    perspective: 600px;
     position: absolute;
-    bottom: 20%;
-    right: 8%;
-    color: #fff;
-    background-color: #D61335;
-    width: 140px;
-    height: 140px;
+    border-radius: 50%;
+    bottom: 15.5%;
+    right: 8.5%
+  }
+.card3 {
+    width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+}
+.card3.is-flipped {
+    transform: rotateY(180deg);
+  }
+  .card_face3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    color:#FFF;
+    text-align: center;
+    font-weight: bold;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 0.9rem;
-    padding: 0.5rem;
-    font-family:'AvenirNextLTPro-Bold', sans-serif ;
-    padding: 0.4rem;
-}
+    padding: 0.8rem;
+    font-weight: 300;
+    font-family: 'AvenirNextLTPro-Bold', sans-serif ;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .red-circle3 {
+      background:#D61335 ;
+  }
+  .blue-circle3 {
+      background: transparent;
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
 .red-circle4 {
     width: 100px;
-    height: auto;
+    height: 100px;
     position: absolute;
     bottom: -5.5%;
     left: 43%;
     transform: rotate(180deg);
 }
-.blockage-container {
-    position: absolute;
-    bottom: 18%;
-    right: 13%;
-}
+
 .blockage-text {
     font-size: 0.9rem;
     font-weight: 600;
-    padding-top: 0.4rem;
+    padding: 0.5rem;
     font-family:'AvenirNextLTPro-Bold', sans-serif ;
+    color: #000;
 }
 .btn-text{
     display: none;
-    /* margin: 4rem 8rem 1rem 8rem; */
+  
     margin: 4rem auto;
     width: 600px;
     font-family:'AvenirNextLTPro-Bold', sans-serif ;
@@ -226,8 +268,34 @@ a:hover {
     top: 41%;
     left: 2%
     }
-
-
+    .card_face2 {
+        font-size: 0.45rem;
+    }
+    .scene2 {
+        width: 70px;
+    height: 70px;
+    /* border: 1px solid #CCC; */
+    margin: 5px 0;
+    perspective: 600px;
+    position: absolute;
+    border-radius: 50%;
+    top: 17%;
+    right: 7%;
+    }
+    .card_face3 {
+        font-size: 0.45rem;
+    }
+    .scene3 {
+        width: 70px;
+    height: 70px;
+    /* border: 1px solid #CCC; */
+    margin: 5px 0;
+    perspective: 600px;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 16%;
+    right:7%;
+    }
 
     /* .red-circle1{
         position: absolute;
@@ -244,7 +312,7 @@ a:hover {
        font-size: 0.45rem;
         padding: 10px;
     } */
-    .red-circle2{
+    /* .red-circle2{
        
         width: 70px;
         height: 70px;
@@ -267,7 +335,7 @@ a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-    } 
+    }  */
     .red-circle4 {
         width: 60px;
         height: auto;
@@ -284,7 +352,7 @@ a:hover {
         right: 12.5%
     }
     .blockage-text {
-        padding: 0;
+        padding: 0.5rem;
         font-size: 12px
     }
     .blockage {

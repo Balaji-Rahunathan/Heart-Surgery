@@ -1,31 +1,17 @@
-// const redCircleOne = document.querySelector('.red-circle1');
-const redCircleTwo = document.querySelector('.red-circle2');
-const redCircleThree = document.querySelector('.clot');
 const redCircleFour = document.querySelector(".red-circle4");
 const btnPara =   document.querySelector('.btn-para');
 const btnText = document.querySelector(".btn-text");
 const card = document.querySelector(".card");
+const card2 = document.querySelector(".card2");
+const card3 = document.querySelector(".card3");
 card.addEventListener('click', function(){
     card.classList.add('is-flipped');
-})
-
-// redCircleOne.addEventListener('click', function() {
-//     redCircleOne.style.backgroundColor = "#00A1FB";
-//     redCircleOne.innerText = "Bypass using Saphenous vein";
-//     // redCircleOne.classList.add("reveal");
-
-// });
-redCircleTwo.addEventListener('click', function() {
-    redCircleTwo.style.backgroundColor = "#00A1FB";
-    redCircleTwo.innerText = "Bypass using Internal Mammary Artery";
 });
-redCircleThree.addEventListener('click', function() {
-    redCircleThree.classList.remove("red-circle3");
-    redCircleThree.innerHTML = `<div class="blockage-container">
-    <img src="./images/Blockage.svg" class="blockage">
-    <p class="blockage-text">Blockage</p>
-    </div>
-    `
+card2.addEventListener('click', function(){
+    card2.classList.add('is-flipped');
+});
+card3.addEventListener('click', function(){
+    card3.classList.add('is-flipped');
 });
 
 btnPara.addEventListener('click', function() {
@@ -36,7 +22,6 @@ btnPara.addEventListener('click', function() {
     redCircleFour.classList.remove("cir");
 });
  redCircleFour.addEventListener('click', function() {
-
 
 if (!redCircleFour.classList.contains("rota")) {
     redCircleFour.classList.add("rota");
