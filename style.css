@@ -51,7 +51,7 @@ a:hover {
    margin-left: -35%; /* Half the width */
     
 }
-.scene {
+.scene1 {
     width: 140px;
     height: 140px;
     /* border: 1px solid #CCC; */
@@ -62,7 +62,7 @@ a:hover {
     top: 37%;
     left: 3%
   }
-.card {
+.card1 {
     width: 100%;
   height: 100%;
   transition: transform 1s;
@@ -71,7 +71,7 @@ a:hover {
   position: absolute;
   border-radius: 50%;
 }
-.card.is-flipped {
+.card1.is-flipped {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg); /* Safari & Chrome */
     -moz-transform: rotateY(180deg); /* Firefox */

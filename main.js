@@ -1,11 +1,11 @@
 const redCircleFour = document.querySelector(".red-circle4");
 const btnPara =   document.querySelector('.btn-para');
 const btnText = document.querySelector(".btn-text");
-const card = document.querySelector(".card");
+const card1 = document.querySelector(".card1");
 const card2 = document.querySelector(".card2");
 const card3 = document.querySelector(".card3");
-card.addEventListener('click', function(){
-    card.classList.add('is-flipped');
+card1.addEventListener('click', function(){
+    card1.classList.add('is-flipped');
 });
 card2.addEventListener('click', function(){
     card2.classList.add('is-flipped');
