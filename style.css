@@ -89,6 +89,7 @@ a:hover {
     border-radius: 50%;
     display: flex;
     justify-content: center;
+    background: transparent;
     align-items: center;
     font-size: 0.9rem;
     padding: 0.8rem;
@@ -98,12 +99,12 @@ a:hover {
     backface-visibility: hidden;
   }
   .red-circle1 {
-      background:#D61335 ;
+      background:#D61335 !important;
   }
   .blue-circle1 {
-      background: #00A1FB;
-      transform: rotateY(180deg);
-      -webkit-transform: rotateY(180deg); /* Safari & Chrome */
+      background: #00A1FB !important;
+      transform: rotateY(180deg) !important;
+      -webkit-transform:rotateY(180deg); /* Safari & Chrome */
 -moz-transform: rotateY(180deg); /* Firefox */
 -ms-transform: rotateY(180deg); /* Internet Explorer */
 -o-transform: rotateY(180deg);
@@ -158,9 +159,9 @@ a:hover {
       background:#D61335 ;
   }
   .blue-circle2 {
-      background: #00A1FB;
-      transform: rotateY(180deg);
-      -webkit-transform: rotateY(180deg); /* Safari & Chrome*/
+      background: #00A1FB !important;
+      transform: rotateY(180deg) !important;
+      -webkit-transform: rotateY(180deg) !important; /* Safari & Chrome*/
 -moz-transform: rotateY(180deg); 
 -ms-transform: rotateY(180deg); 
 -o-transform: rotateY(180deg); 
@@ -212,11 +213,11 @@ a:hover {
     backface-visibility: hidden;
   }
   .red-circle3 {
-      background:#D61335 ;
+      background:#D61335 !important;
   }
   .blue-circle3 {
       background: transparent;
-      transform: rotateY(180deg);
+      transform: rotateY(180deg) !important;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -234,10 +235,10 @@ a:hover {
     bottom: -5.5%;
     left: 43%;
     transform: rotate(180deg);
-    -webkit-transform: rotateY(180deg); 
--moz-transform: rotateY(180deg); 
--ms-transform: rotateY(180deg); 
--o-transform: rotateY(180deg);
+    -webkit-transform: rotate(180deg); 
+-moz-transform: rotate(180deg); 
+-ms-transform: rotate(180deg); 
+-o-transform: rotate(180deg);
 }
 
 .blockage-text {
@@ -262,7 +263,8 @@ a:hover {
 -moz-transform: rotate(0deg); 
 -ms-transform: rotate(0deg); 
 -o-transform: rotate(0deg);
-    transition: transform 0.3s linear
+    transition: transform 0.3s linear;
+    -webkit-transition: -webkit-transform 0.3s linear;
 }
 .cir {
     transform: rotate(180deg);
@@ -270,7 +272,8 @@ a:hover {
 -moz-transform: rotate(180deg); 
 -ms-transform: rotate(1800deg); 
 -o-transform: rotate(180deg);
-    transition: transform 0.3s linear
+    transition: transform 0.3s linear;
+    -webkit-transition: -webkit-transform 0.3s linear;
 }
 .btn-para-a {
     margin-top: 4rem;
