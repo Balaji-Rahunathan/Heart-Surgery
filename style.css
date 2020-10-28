@@ -54,7 +54,7 @@ a:hover {
 .red-circle1{
     position: absolute;
     top: 39%;
-    left: 3%;
+    left: 1%;
     color: #fff;
     background-color: #D61335;
     width: 130px;
@@ -64,13 +64,13 @@ a:hover {
     justify-content: center;
     align-items: center;
     font-size: 0.9rem;
-    padding: 0.5rem;
+    padding: 20px;
     font-family:'AvenirNextLTPro-Bold', sans-serif ;
 }
 .red-circle2{
     position: absolute;
     top: 19%;
-    right: 7%;
+    right: 3%;
     color: #fff;
     background-color: #D61335;
     width: 130px;
@@ -81,7 +81,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     font-family:'AvenirNextLTPro-Bold', sans-serif ;
-    padding: 0.5rem;
+    padding: 20px;
 }
 .red-circle3{
     position: absolute;
@@ -96,7 +96,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     font-size: 0.9rem;
-    padding: 0.5rem;
+    padding: 20px;
     font-family:'AvenirNextLTPro-Bold', sans-serif ;
 }
 .red-circle4 {
@@ -131,8 +131,8 @@ a:hover {
 .btn-para-a {
     margin-top: 4rem;
     margin-bottom: 2rem;
+    font-size: 14px;
     font-weight: 550;
-    word-spacing: 0.1rem;
     color: #00A1FB
 }
 
