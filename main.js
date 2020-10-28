@@ -1,54 +1,50 @@
-const redCircleOne = document.querySelector('.red-circle1');
-const redCircleTwo = document.querySelector('.red-circle2');
-const redCircleThree = document.querySelector('.clot');
 const redCircleFour = document.querySelector(".red-circle4");
 const btnPara =   document.querySelector('.btn-para');
 const btnText = document.querySelector(".btn-text");
-
-redCircleOne.addEventListener('click', function() {
-    redCircleOne.style.backgroundColor = "#00A1FB";
-    redCircleOne.innerText = "Bypass using Saphenous vein";
+const card1 = document.querySelector(".card1");
+const card2 = document.querySelector(".card2");
+const card3 = document.querySelector(".card3");
+card1.addEventListener('click', function(){
+    card1.classList.add('is-flipped');
 });
-redCircleTwo.addEventListener('click', function() {
-    redCircleTwo.style.backgroundColor = "#00A1FB";
-    redCircleTwo.innerText = "Bypass using Internal Mammary Artery";
+card2.addEventListener('click', function(){
+    card2.classList.add('is-flipped');
 });
-redCircleThree.addEventListener('click', function() {
-    redCircleThree.classList.remove("red-circle3");
-    redCircleThree.innerHTML = `<div class="blockage-container">
-    <img src="./images/Blockage.svg" class="blockage">
-    <p class="blockage-text">Blockage</p>
-    </div>
-    `
+card3.addEventListener('click', function(){
+    card3.classList.add('is-flipped');
 });
 
 btnPara.addEventListener('click', function() {
     btnText.style.display = "block";
-    btnText.textContent = `During your Coronary Artery Bypass Surgery (CABG) the doctor takes a vein from your leg and an artery from your chext wall or arm. These are used to bypass the narrowed area in your coronary arteries (see picture opposite). This improves the oxygen supply to the heart muscle. Your body can still work without the arteries and veins that are used by the surgeon for your bypass `;
+    btnText.textContent = `During your Coronary Artery Bypass Surgery (CABG) the doctor takes a vein from your leg and an artery from your chext wall or arm. These are used to bypass the narrowed area in your coronary arteries (see picture opposite). This improves the oxygen supply to the heart muscle. Your body can still work without the arteries and veins that are used by the surgeon for your bypass. `;
     btnPara.style.display = "none";
     redCircleFour.classList.add("rota");
     redCircleFour.classList.remove("cir");
 });
+ redCircleFour.addEventListener('click', function() {
 
-
-
-// if(redCircleFour.classList.contains("cir")) {
-    redCircleFour.addEventListener('click', function() {
+if (!redCircleFour.classList.contains("rota")) {
+    redCircleFour.classList.add("rota");
+    redCircleFour.classList.remove("cir");
+    console.log("hi");
+    setTimeout(() => {
         btnText.style.display = "block";
-        btnText.textContent = `During your Coronary Artery Bypass Surgery (CABG) the doctor takes a vein from your leg and an artery from your chext wall or arm. These are used to bypass the narrowed area in your coronary arteries (see picture opposite). This improves the oxygen supply to the heart muscle. Your body can still work without the arteries and veins that are used by the surgeon for your bypass`;
+        btnText.textContent = `During your Coronary Artery Bypass Surgery (CABG) the doctor takes a vein from your leg and an artery from your chext wall or arm. These are used to bypass the narrowed area in your coronary arteries (see picture opposite). This improves the oxygen supply to the heart muscle. Your body can still work without the arteries and veins that are used by the surgeon for your bypass.`;
         btnPara.style.display = "none";
-        redCircleFour.classList.add("rota");
-    });
-// } 
-// redCircleFour.addEventListener('click', function() {
-//     btnText.style.display = "none";
-//     btnPara.style.display = "block";
-//     redCircleFour.classList.remove("rota");
-  
-//     redCircleOne.style.backgroundColor = "#D61335";
-//     redCircleOne.innerText = "Click here to Reveal!";
-//     redCircleTwo.style.backgroundColor = "#D61335";
-//     redCircleTwo.innerText = "Click here to Reveal!";
-//    redCircleThree.innerHTML = "Click here to Reveal!";
-//     redCircleThree.classList.add("red-circle3");
-// });
+       
+    }, 0300);
+           
+       
+ } else {
+    redCircleFour.classList.remove("rota");
+    redCircleFour.classList.add("cir");
+    console.log("you");
+    setTimeout(() => {
+        btnText.style.display = "none";
+        btnText.textContent = "";
+        btnPara.style.display = "block";
+       
+    }, 0300);
+       
+    }
+})

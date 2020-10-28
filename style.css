@@ -12,7 +12,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    letter-spacing: 1px
+   
 }
 a {
     text-decoration: none;
@@ -28,7 +28,7 @@ a:hover {
     font-size: 36px;
     font-family:'AvenirNextLTPro-Bold', sans-serif ;
     font-weight: 550;
-    word-spacing: 0.2rem
+  
 }
 .btn-para {
     color: #00A1FB;
@@ -43,15 +43,20 @@ a:hover {
 }
 .heart {
    position: absolute;
-   top: 50%;
+   top: 52%;
    left: 50%;
-   width: 76%;
-   height: 76%;
-   margin-top: -38%; /* Half the height */
-   margin-left: -38%; /* Half the width */
+   width: 70%;
+   height: 70%;
+   margin-top: -35%; /* Half the height */
+   margin-left: -35%; /* Half the width */
     
 }
-.red-circle1{
+.scene1 {
+    width: 140px;
+    height: 140px;
+    /* border: 1px solid #CCC; */
+    margin: 40px 0;
+    perspective: 600px;
     position: absolute;
     top: 39%;
     left: 1%;
@@ -62,12 +67,20 @@ a:hover {
     border-radius: 50%;
     display: flex;
     justify-content: center;
+    background: transparent;
     align-items: center;
     font-size: 0.9rem;
     padding: 20px;
     font-family:'AvenirNextLTPro-Bold', sans-serif ;
 }
-.red-circle2{
+.card2.is-flipped {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); /* Safari & Chrome */
+    -moz-transform: rotateY(180deg); /* Firefox */
+    -ms-transform: rotateY(180deg); /* Internet Explorer */
+    -o-transform: rotateY(180deg);
+  }
+  .card_face2 {
     position: absolute;
     top: 19%;
     right: 3%;
@@ -77,20 +90,26 @@ a:hover {
     height: 130px;
     border-radius: 50%;
     display: flex;
-    font-size: 0.9rem;
     justify-content: center;
     align-items: center;
     font-family:'AvenirNextLTPro-Bold', sans-serif ;
     padding: 20px;
 }
-.red-circle3{
+.card3.is-flipped {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg); /* Safari & Chrome */
+    -moz-transform: rotateY(180deg); /* Firefox */
+    -ms-transform: rotateY(180deg); /* Internet Explorer */
+    -o-transform: rotateY(180deg);
+  }
+  .card_face3 {
     position: absolute;
-    bottom: 22%;
-    right: 9%;
-    color: #fff;
-    background-color: #D61335;
-    width: 130px;
-    height: 130px;
+    width: 100%;
+    height: 100%;
+    
+    color:#FFF;
+    text-align: center;
+    font-weight: bold;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -101,32 +120,50 @@ a:hover {
 }
 .red-circle4 {
     width: 100px;
-    height: auto;
+    height: 100px;
     position: absolute;
-    bottom: -6%;
-    left: 42%;
+    bottom: -5.5%;
+    left: 43%;
     transform: rotate(180deg);
+    -webkit-transform: rotate(180deg); 
+-moz-transform: rotate(180deg); 
+-ms-transform: rotate(180deg); 
+-o-transform: rotate(180deg);
 }
-.blockage-container {
-    position: absolute;
-    bottom: 18%;
-    right: 11%;
-}
+
 .blockage-text {
     font-size: 0.9rem;
-    font-weight: 900;
-    padding-top: 0.4rem;
+    font-weight: 600;
+    padding: 0.5rem;
     font-family:'AvenirNextLTPro-Bold', sans-serif ;
+    color: #000;
 }
 .btn-text{
     display: none;
-    margin: 4rem 2rem 1rem 2rem;
+  
+    margin: 4rem auto;
+    width: 600px;
     font-family:'AvenirNextLTPro-Bold', sans-serif ;
     font-size: 16px;
-    word-spacing: 0.1rem;
+    text-align: justify
 }
 .rota{
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); 
+-moz-transform: rotate(0deg); 
+-ms-transform: rotate(0deg); 
+-o-transform: rotate(0deg);
+    transition: transform 0.3s linear;
+    -webkit-transition: -webkit-transform 0.3s linear;
+}
+.cir {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg); 
+-moz-transform: rotate(180deg); 
+-ms-transform: rotate(1800deg); 
+-o-transform: rotate(180deg);
+    transition: transform 0.3s linear;
+    -webkit-transition: -webkit-transform 0.3s linear;
 }
 .btn-para-a {
     margin-top: 4rem;
@@ -136,6 +173,8 @@ a:hover {
     color: #00A1FB
 }
 
+/****card animation ******/
+
 @media (max-width: 576px) {
    
     .image-container{
@@ -144,61 +183,82 @@ a:hover {
         margin: 5rem auto 2rem auto;
         position: relative;
     }
-    .red-circle1{
-        position: absolute;
-        top: 39%;
-        left: 3%;
-        color: #fff;
-        background-color: #D61335;
-        width: 65px;
-        height: 65px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-       font-size: 0.5rem;
-        padding: 0.5rem;
+    .card_face {
+        font-size: 0.45rem;
     }
-    .red-circle2{
-       
-        width: 65px;
-        height: 65px;
-        font-size: 0.5rem;
-        top: 18%;
-        right: 7%;
+    .scene1 {
+        width: 70px;
+    height: 70px;
+    /* border: 1px solid #CCC; */
+    margin: 5px 0;
+    perspective: 600px;
+    position: absolute;
+    border-radius: 50%;
+    top: 41%;
+    left: 2%
     }
-    .red-circle3{
-       
-        width: 65px;
-        height: 65px;
-        font-size: 0.5rem;
-        bottom: 20%;
-        right: 8%;
-    } 
+    .card_face2 {
+        font-size: 0.45rem;
+    }
+    .scene2 {
+        width: 70px;
+    height: 70px;
+    /* border: 1px solid #CCC; */
+    margin: 5px 0;
+    perspective: 600px;
+    position: absolute;
+    border-radius: 50%;
+    top: 17%;
+    right: 7%;
+    }
+    .card_face3 {
+        font-size: 0.45rem;
+    }
+    .scene3 {
+        width: 70px;
+    height: 70px;
+    /* border: 1px solid #CCC; */
+    margin: 5px 0;
+    perspective: 600px;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 16%;
+    right:7%;
+    }
+
     .red-circle4 {
         width: 60px;
         height: auto;
         position: absolute;
         bottom: -7%;
         left: 42%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .blockage-container {
         position: absolute;
-        top: 60%;
-        right: 7%
+        top: 62%;
+        right: 12.5%
+    }
+    .blockage-text {
+        padding: 0.5rem;
+        font-size: 12px
     }
     .blockage {
-        width: 65px;
-        height: 65px;
+        width: 45px;
+        height: 45px;
     }
     .btn-para-a {
         margin-top: 2.5rem;
+        font-size: 16px
     }
     .btn-text{
         display: none;
-        margin: 2.5rem 2rem 1rem 2rem;
+        margin: 2.5rem auto 1rem auto;
         font-family:'AvenirNextLTPro-Bold', sans-serif ;
-        font-size: 14px
+        font-size: 14px;
+        max-width: 300px
     }
     .head-title {
         font-size: 28px
